@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- link menu ícone -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Manage landing page</title>
+  </head>
+  <body>
+    <main id="home">
+      <header>
+        <div class="img-logo-div">
+          <img src="images/logo.svg" alt="logomarca da empresa" />
+        </div>
+        <!-- menu desktop -->
+        <div class="div-burguer">
+          <i id="burguer" class="material-icons" onclick="abrirMenu()">
+            menu
+          </i>
+        </div>
+        <div class="sidebar">
+          <nav id="itens" class="nav-header">
+            <ul class="link-list">
+              <li><a href="" class="link-header"> Pricing</a></li>
+              <li><a href="" class="link-header"> Product</a></li>
+              <li><a href="" class="link-header"> About Us</a></li>
+              <li><a href="" class="link-header"> Careers </a></li>
+              <li><a href="" class="link-header"> Community</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- sidebar desktop -->
+        <div class="sidebar__desktop">
+          <nav class="nav-header">
+            <a href="" class="link-header"> Pricing</a>
+            <a href="" class="link-header"> Product</a>
+            <a href="" class="link-header"> About Us</a>
+            <a href="" class="link-header"> Careers </a>
+            <a href="" class="link-header"> Community</a>
+          </nav>
+        </div>
+        <button id="button-mobile" class="btn-header">Get Started</button>
+      </header>
+      <div class="item1">
+        <h1>Bring everyone together to build better products.</h1>
+        <p class="p-item1">
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view.
+        </p>
+        <button class="btn-item1">Get Started</button>
+      </div>
+      <div class="item2">
+        <img src="images/illustration-intro.svg" alt="" />
+      </div>
+      <div class="item3">
+        <h2>What’s different about Manage?</h2>
+        <p>
+          Manage provides all the functionality your team needs, without the
+          complexity. Our software is tailor-made for modern digital product
+          teams.
+        </p>
+      </div>
+      <div class="item4">
+        <div class="itens-item4">
+          <h3><span>01</span> Track company-wide progress</h3>
+          <p>
+            See how your day-to-day tasks fit into the wider vision. Go from
+            tracking progress at the milestone level all the way done to the
+            smallest of details. Never lose sight of the bigger picture again.
+          </p>
+        </div>
+        <div class="itens-item4">
+          <h3><span>02</span> Advanced built-in reports</h3>
+          <p>
+            Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports
+            you need to keep key stakeholders informed.
+          </p>
+        </div>
+        <div class="itens-item4">
+          <h3><span>03</span> Everything you need in one place</h3>
+          <p>
+            Stop jumping from one service to another to communicate, store
+            files, track tasks and share documents. Manage offers an all-in-one
+            team productivity solution.
+          </p>
+        </div>
+      </div>
+      <div class="item5 js-carousel--responsive--container">
+        <h2>What they’ve said</h2>
+        <div class="carousel_slides js-carousel--responsive">
+          <div class="avaliacoes">
+            <img src="images/avatar-anisha.png" alt="" />
+            <strong> Anisha Li </strong>
+            <p>
+              “Manage has supercharged our team’s workflow. The ability to
+              maintain visibility on larger milestones at all times keeps
+              everyone motivated.”
+            </p>
+          </div>
+          <div class="avaliacoes">
+            <img src="images/avatar-ali.png" alt="" />
+            <strong> Ali Bravo </strong>
+            <p>
+              \a “We have been able to cancel so many other subscriptions since
+              using Manage. There is no more cross-channel confusion and
+              everyone is much more focused.”
+            </p>
+          </div>
+          <div class="avaliacoes">
+            <img src="images/avatar-richard.png" alt="" />
+            <strong> Richard Watts </strong>
+            <p>
+              “Manage allows us to provide structure and process. It keeps us
+              organized and focused. I can’t stop recommending them to everyone
+              I talk to!”
+            </p>
+          </div>
+          <div class="avaliacoes">
+            <img src="images/avatar-shanai.png" alt="" />
+            <strong> Shanai Gough </strong>
+            <p>
+              “Their software allows us to track, manage and collaborate on our
+              projects from anywhere. It keeps the whole team in-sync without
+              being intrusive.”
+            </p>
+          </div>
+        </div>
+        <div class="js-carousel--responsive-dots" role="tablist"></div>
+
+        <button class="btn-item1 item5-btn">Get Started</button>
+      </div>
+
+      <div class="item6">
+        <h2>Simplify how your team works today. Get Started</h2>
+        <button class="btn-final">Get Started</button>
+      </div>
+    </main>
+    <footer>
+      <img class="img-footer" src="images/logo.svg" alt="" />
+      <nav class="nav-footer1">
+        <a href="#home" class="link-footer">
+          <img src="images/icon-facebook.svg" alt="" />
+        </a>
+        <a href="" class="link-footer1">
+          <img src="images/icon-youtube.svg" alt="" />
+        </a>
+        <a href="" class="link-footer1">
+          <img src="images/icon-twitter.svg" alt="" />
+        </a>
+        <a href="" class="link-footer1">
+          <img src="images/icon-pinterest.svg" alt="" />
+        </a>
+        <a href="" class="link-footer1">
+          <img src="images/icon-instagram.svg" alt="" />
+        </a>
+      </nav>
+      <nav class="nav-footer2">
+        <a href="#home" class="link-footer2"> Home</a>
+        <a href="" class="link-footer2"> Pricing</a>
+        <a href="" class="link-footer2"> Product</a>
+        <a href="" class="link-footer2"> About Us</a>
+        <a href="" class="link-footer2"> Careers </a>
+        <a href="" class="link-footer2"> Community</a>
+        <a href="" class="link-footer2"> Privacy Policy</a>
+      </nav>
+      <form>
+        <input type="text" class="input" value="Updates in your inbox…" />
+        <button class="btn-input" type="button" onclick="enviarResposta()">
+          GO
+        </button>
+      </form>
+      <p class="copy">&copy;Go Copyright 2020. All Rights Reserved</p>
+    </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#"> Fabrízia Pachêco Fraco</a>.
+    </div>
+    <!-- link carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
